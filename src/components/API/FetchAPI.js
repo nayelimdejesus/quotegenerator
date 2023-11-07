@@ -17,8 +17,8 @@ return(
   <div>
     <div class = "card">
       <h1>Quote of the Day</h1>
-      <br/>
-      {JSON.stringify(data.content)}
+      <p>{JSON.stringify(data.content)}</p>
+      <p class = "authorName">~ {(data.authorSlug.replace(/-/g, " "))}</p>
       <br/>
       <br/>
       <button onClick={apiGet}>Next Quote</button>
@@ -30,13 +30,3 @@ return(
 
 export default FetchAPI;
 
-
-
-  // async function randomQuote() {
-  //   const response = await fetch('https://api.quotable.io/random')
-  //   const quote = await response.json()
-    
-  //   // Output the quote and author name
-  //   console.log(quote.content)
-  //   console.log(`- ${quote.author}`)
-  // }

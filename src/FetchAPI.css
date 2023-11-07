@@ -1,18 +1,42 @@
 body{
-    background-color: #f514d7;
+    background-color: #c20eaa;
+    font-family: Palatino, URW Palladio L, serif;
 }
 
 .card{
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 5px 9px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 40em;
     height: auto;
-    padding-top: 1em;
-    padding-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
     margin: 0 auto;
     /* margin-left: auto;
     margin-right: auto; */
-    margin-top: 12em;
+    margin-top: 10em;
+}
+h1{
+    font-size: 3em;
+}
+p{
+    font-size: 2em;
+}
+.authorName{
+    font-size: 1em;
+    font-style: italic;
+}
+
+button{
+    font-family: Palatino, URW Palladio L, serif;
+    border: 2px solid #f514d7;
+    border-radius: 4px;
+    padding: .5em;
+    transition: 0.3s;
+    background-color: #f514d7;
+    color: white;
+    font-size: 1em;
 }
