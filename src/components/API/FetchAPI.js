@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../../FetchAPI.css';
 
 function FetchAPI(){
   const [data, setData] = useState([]);
@@ -14,14 +15,15 @@ const apiGet = () => {
 
 return( 
   <div>
-    <card>
+    <div class = "card">
       <h1>Quote of the Day</h1>
       <br/>
       {JSON.stringify(data.content)}
       <br/>
       <br/>
       <button onClick={apiGet}>Next Quote</button>
-    </card>
+
+    </div>
   </div>
   );
 }
