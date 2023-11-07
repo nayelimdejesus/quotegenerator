@@ -19,7 +19,7 @@ return(
     <div class = "card">
       <h1>Quote of the Day</h1>
       <p>{JSON.stringify(data.content)}</p>
-      <p class = "authorName">~ {(data.author)}</p>
+      <p class = "authorName"> {(data.author)}</p>
       <br/>
       <br/>
       <button onClick={apiGet}>Get Quote</button>
