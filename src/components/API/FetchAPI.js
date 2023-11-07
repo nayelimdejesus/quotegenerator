@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 function FetchAPI(){
+  const [data, setData] = useState([]);
 const apiGet = () => {
     fetch('https://api.quotable.io/random')
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => {
+      console.log(json); 
+      setData(json);
+    });
+  
 };
 
 return( 
   <div>
-    My API <br/>
-    <button>Fetch API</button>
+    <h1>Quote of the Day</h1>
+    <br/>
+    {JSON.stringify(data.content)}
+    <br/>
+    <br/>
+    <button onClick={apiGet}>Next Quote</button>
   </div>
   );
 }
