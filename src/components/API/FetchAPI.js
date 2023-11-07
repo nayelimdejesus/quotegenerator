@@ -14,12 +14,14 @@ const apiGet = () => {
 
 return( 
   <div>
-    <h1>Quote of the Day</h1>
-    <br/>
-    {JSON.stringify(data.content)}
-    <br/>
-    <br/>
-    <button onClick={apiGet}>Next Quote</button>
+    <card>
+      <h1>Quote of the Day</h1>
+      <br/>
+      {JSON.stringify(data.content)}
+      <br/>
+      <br/>
+      <button onClick={apiGet}>Next Quote</button>
+    </card>
   </div>
   );
 }
